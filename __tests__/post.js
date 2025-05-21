@@ -8,7 +8,7 @@ describe('Post API Test', () => {
   beforeAll(async () => {
     
     const loginRes = await request(app).post('/users/login').send({
-      email: 'bal@gmail.com', 
+      email: 'testuser@gmail.com', 
       password: 'password123',
     });
     token = loginRes.body.token;
